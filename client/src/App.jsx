@@ -1,10 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './layout.scss'
+import Navbar from './components/Navbar'
+import Homepage from './routes/homePage/Homepage'
 
-function App() {
-  return <div className='layout'>hello</div>
+const App = () => {
+  return (
+    <div className='layout'>
+      <div className='navbar'>
+        <Navbar />
+      </div>
+      <div className='content'>
+        <Homepage />
+      </div>
+    </div>
+  )
 }
 
 export default App
