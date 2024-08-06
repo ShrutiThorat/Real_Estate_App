@@ -22,7 +22,7 @@ const SinglePage = () => {
                 <div className='price'>$ {singlePostData.price}</div>
               </div>
               <div className='user'>
-                {/* {/* <img src={userData.img} alt='' /> */} */}
+                <img src={userData.img} alt='' />
                 <span>{userData.name}</span>
               </div>
             </div>
