@@ -1,24 +1,24 @@
-import { useState } from 'react'
-import './Slider.scss'
+import { useState } from 'react';
+import './Slider.scss';
 
 const Slider = ({ images }) => {
-  const [imageIndex, setImageIndex] = useState(null)
+  const [imageIndex, setImageIndex] = useState(null);
 
   const changeSlide = (direction) => {
     if (direction === 'left') {
       if (imageIndex === 0) {
-        setImageIndex(images.length - 1)
+        setImageIndex(images?.length - 1);
       } else {
-        setImageIndex(imageIndex - 1)
+        setImageIndex(imageIndex - 1);
       }
     } else {
-      if (imageIndex === images.length - 1) {
-        setImageIndex(0)
+      if (imageIndex === images?.length - 1) {
+        setImageIndex(0);
       } else {
-        setImageIndex(imageIndex + 1)
+        setImageIndex(imageIndex + 1);
       }
     }
-  }
+  };
 
   return (
     <div className='slider'>
@@ -52,7 +52,7 @@ const Slider = ({ images }) => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Slider
+export default Slider;

@@ -1,8 +1,8 @@
-import './HomePage.scss'
-import backgroundImage from '../../assets/bg.png'
-import SearchBar from '../../components/searchBar/SearchBar'
+import './HomePage.scss';
+import backgroundImage from '../../assets/bg.png';
+import SearchBar from '../../components/searchBar/SearchBar';
 
-const Homepage = () => {
+const HomePage = () => {
   return (
     <div className='homePage'>
       <div className='textContainer'>
@@ -35,7 +35,7 @@ const Homepage = () => {
         <img src={backgroundImage} />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
+export default HomePage;
